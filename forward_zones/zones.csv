@@ -1,0 +1,5 @@
+zone,dns_view,dns_host,ext_fwd,nsgs
+avalon.com,sbaksh-dns-view,sbaksh-01-ova,10.10.10.1
+avalon2.com,sbaksh-dns-view,sbaksh-01-ova,,thelaire-forward-nsg
+avalon3.com,sbaksh-dns-view,sbaksh-b1ddi-docker02,10.10.10.5
+avalon4.com,sbaksh-dns-view,sbaksh-b1ddi-docker02
