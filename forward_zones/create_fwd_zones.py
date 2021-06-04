@@ -23,7 +23,7 @@ import csv
 csp_token = 'csp.ini'
 b1ddi = bloxone.b1ddi(csp_token)
 
-def create_paylod(zone,view,host,ext_fwd,nsgs):
+def create_payload(zone,view,host,ext_fwd,nsgs):
   # Create Forward Zone with NSG
   if not ext_fwd:
     payload = json.dumps({
@@ -72,7 +72,7 @@ for row in reader:
       ext_fwd = ''
       nsgs = nsg
       zone = row['zone']
-      payload = create_paylod(zone,view,host,ext_fwd,nsgs)
+      payload = create_payload(zone,view,host,ext_fwd,nsgs)
       r = b1ddi.create('/dns/forward_zone', body=payload)
       print(f'[+]{zone} was created NSG - {row["nsgs"]}')
     # Will create an External Forwarder 
@@ -83,5 +83,5 @@ for row in reader:
       ext_fwd = row['ext_fwd']
       nsgs = ''
       zone = row['zone']
-      payload = create_paylod(zone,view,host,ext_fwd,nsgs)
+      payload = create_payload(zone,view,host,ext_fwd,nsgs)
       r = b1ddi.create('/dns/forward_zone', body=payload)
