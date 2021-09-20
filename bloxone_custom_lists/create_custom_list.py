@@ -16,7 +16,7 @@ tdc = bloxone.b1tdc(csp_token)
 n = 50000
 sum = 0
 # Read the filename bad_domains.txt
-with open('bad_domains.txt') as file:
+with open('bad_domain.txt') as file:
     while True:
         next_n_lines = list(islice(file, n))
         if not next_n_lines:
@@ -29,7 +29,7 @@ with open('bad_domains.txt') as file:
             for line in next_n_lines:
                 payload_list.append(line.rstrip())
             sif = str(bob)
-            name = "sbaksh-custom-list-" + sif
+            name = "1-via-api-custom-list-" + sif
             payload = json.dumps({
             "items": payload_list,
             "name": name,
