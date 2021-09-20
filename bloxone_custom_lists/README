@@ -1,9 +1,9 @@
-# bloxone custom list!
+#bloxone custom list!
 
 This will allow you to take any  **Domain Threat Intelligence** and import it in to @Infoblox Threat Defense Product
 
 
-# What's needed
+#What's needed
 
  - Python 3.6 or greater
  - Infoblox Bloxone module - https://pypi.org/project/bloxone/
