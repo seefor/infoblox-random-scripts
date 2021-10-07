@@ -12,6 +12,8 @@ csp_token = 'csp.ini'
 # Create a BloxOne DDI Object
 tdc = bloxone.b1tdc(csp_token)
 
+custom_list_name = input("Enter a name for the custom list: ")
+
 # 50,000 is the max a Custom list can hold
 n = 50000
 sum = 0
@@ -29,7 +31,7 @@ with open('bad_domain.txt') as file:
             for line in next_n_lines:
                 payload_list.append(line.rstrip())
             sif = str(bob)
-            name = "1-via-api-custom-list-" + sif
+            name = custom_list_name + "-" + sif
             payload = json.dumps({
             "items": payload_list,
             "name": name,
