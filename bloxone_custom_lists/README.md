@@ -8,7 +8,7 @@ This will allow you to take any  **Domain Threat Intelligence** and import it in
  - Python 3.6 or greater
  - Infoblox Bloxone module - https://pypi.org/project/bloxone/
  - Infoblox CSP API Token - https://csp.infoblox.com
-	 - Please **DO NOT COPY FROM THE UI** if you have to create a new API key
+	 - Please **DO NOT COPY THE API KEY FROM THE UI** if you have to create a new API key
 
 > pip install bloxone
 
