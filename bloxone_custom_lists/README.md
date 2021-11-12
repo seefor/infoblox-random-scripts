@@ -21,4 +21,4 @@ Edit csp.ini with Your API Token
 > 
 > api_key = 'YOUR_TOKEN'
 
-Then run "python3 get_insights.py"
+Then run "python3 create_custom_list.py"
