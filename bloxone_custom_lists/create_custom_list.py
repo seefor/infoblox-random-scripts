@@ -13,6 +13,7 @@ csp_token = 'csp.ini'
 tdc = bloxone.b1tdc(csp_token)
 
 custom_list_name = input("Enter a name for the custom list: ")
+custom_list_descr = input("Enter a description for the custom list: ")
 
 # 50,000 is the max a Custom list can hold
 n = 50000
@@ -35,6 +36,7 @@ with open('bad_domain.txt') as file:
             payload = json.dumps({
             "items": payload_list,
             "name": name,
+            "description": custom_list_descr,
             "type": "custom_list"
             })
         else:
